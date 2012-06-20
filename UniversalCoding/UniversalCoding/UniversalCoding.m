@@ -46,7 +46,6 @@
         NSString *ivarType = [[[NSString alloc] initWithUTF8String:ivar_getTypeEncoding(ivars[i])] autorelease]; 
         [ivarDictionary setValue:[self parseType:ivarType] forKey:ivarName];
     }
-    //---
     return ivarDictionary;
 }
 
